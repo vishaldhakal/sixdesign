@@ -2,6 +2,7 @@ import Head from "next/head";
 import Navbar from "../components/Navbar";
 import ShowcaseCard from "../components/ShowcaseCard";
 import ServiceCard from "../components/ServiceCard";
+import PortfolioCard from "../components/PortfolioCard";
 
 export default function Home() {
   return (
@@ -84,7 +85,7 @@ export default function Home() {
               image="/design.svg"
               imagealt="Beautifully Designed"
               title="Beautifully Designed"
-              description="Our team of expert designers creates stunning and visually appealing websites that capture your brand's essence and leave a lasting impression on your audience."
+              description="Stunning designs that captivate your audience."
             ></ServiceCard>
           </div>
           <div className="col">
@@ -92,7 +93,7 @@ export default function Home() {
               image="/responsive.svg"
               imagealt="100% Responsive"
               title="100% Responsive"
-              description="Our websites are fully responsive and optimized for all devices, ensuring that your website looks and functions flawlessly on desktops, laptops, tablets, and mobile phones."
+              description="Optimized for all devices, ensuring seamless browsing."
             ></ServiceCard>
           </div>
           <div className="col">
@@ -100,7 +101,7 @@ export default function Home() {
               image="/animations.svg"
               imagealt="Smooth Animations"
               title="Smooth Animations"
-              description="We use smooth animations to enhance the user experience and engage your audience, creating an immersive and captivating website."
+              description="Engaging animations for an immersive experience."
             ></ServiceCard>
           </div>
           <div className="col">
@@ -108,7 +109,7 @@ export default function Home() {
               image="/cms.svg"
               imagealt="CMS Content"
               title="CMS Content"
-              description="Our websites are built with a powerful CMS (Content Management System) that allows you to easily update and manage your website's content, ensuring that your website is always up-to-date and relevant."
+              description="Easy-to-update always up-to-date content management system."
             ></ServiceCard>
           </div>
           <div className="col">
@@ -116,7 +117,7 @@ export default function Home() {
               image="/pack.svg"
               imagealt="Templates Set"
               title="Templates Set"
-              description="We offer a wide range of customizable templates that can be tailored to your specific needs and preferences, providing you with a unique and personalized website that stands out from the crowd."
+              description="Wide range of customizable templates to choose from."
             ></ServiceCard>
           </div>
           <div className="col">
@@ -124,8 +125,41 @@ export default function Home() {
               image="/support.svg"
               imagealt="Friendly Support"
               title="Friendly Support"
-              description="Our friendly and knowledgeable support team is always ready to assist you with any questions or concerns you may have, providing you with the peace of mind and confidence you need to succeed online."
+              description="Expert and responsive support team at your service."
             ></ServiceCard>
+          </div>
+        </div>
+      </div>
+      <div className="py-5"></div>
+      <div className="py-3 pb-5">
+        <div className="container">
+          <div className="d-flex justify-content-start align-items-center">
+            <div>
+              <h2 className="fw-bold container">Discover Our Creativity</h2>
+            </div>
+          </div>
+          <div className="row row-cols-1 row-cols-md-3 g-4 m-0">
+            <div className="col">
+              <PortfolioCard
+                image="/kipling.jpg"
+                imagealt="kipling station condos"
+                title="Kipling Station Condos - Rego Realty"
+              ></PortfolioCard>
+            </div>
+            <div className="col">
+              <PortfolioCard
+                image="/oakpark.jpg"
+                imagealt="oakpark village"
+                title="The Village of Oak Park - Rego Realty"
+              ></PortfolioCard>
+            </div>
+            <div className="col">
+              <PortfolioCard
+                image="/knight.jpg"
+                imagealt="Knightsbridge Condos"
+                title="Knightsbridge Condos - Rego Realty"
+              ></PortfolioCard>
+            </div>
           </div>
         </div>
       </div>
