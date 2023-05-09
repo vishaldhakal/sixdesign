@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Navbar from "../components/Navbar";
 import ShowcaseCard from "../components/ShowcaseCard";
+import ServiceCard from "../components/ServiceCard";
 
 export default function Home() {
   return (
@@ -15,8 +16,32 @@ export default function Home() {
       <div className="hero-section container">
         <div className="row row-cols-1 row-cols-md-2 align-items-center">
           <div className="col col-md-9">
-            <h1 className="main-title pt-5">
-              We’re a creative ‍ design agency from Canada
+            <div className="d-flex gap-5  pt-5">
+              <div className="d-flex flex-column">
+                <h5 className="fs-3 fw-bold">40+</h5>
+                <p>Happy Clients</p>
+                <div className="border-bottom border-2 border-dark"></div>
+              </div>
+              <div className="d-flex flex-column">
+                <h5 className="fs-3 fw-bold">54</h5>
+                <p>Projects Completed</p>
+                <div className="border-bottom border-2 border-dark"></div>
+              </div>
+              <div className="d-flex flex-column">
+                <h5 className="fs-3 fw-bold">20</h5>
+                <p>Dedicated Members</p>
+                <div className="border-bottom border-2 border-dark"></div>
+              </div>
+              <div className="d-flex flex-column">
+                <h5 className="fs-3 fw-bold">10+</h5>
+                <p>Recognitions</p>
+                <div className="border-bottom border-2 border-dark"></div>
+              </div>
+            </div>
+            <h1 className="main-title pt-1">
+              <span class="aff2">
+                We’re a creative ‍ design agency from Canada
+              </span>
             </h1>
             <div className="py-2"></div>
             <button className="btn btn-lg btn-mine2 btn-trans">
@@ -44,6 +69,69 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <div className="py-5"></div>
+      <div className="container">
+        <div className="d-flex justify-content-center align-items-center">
+          <div className="intro">
+            <span className="title">What You Get</span>
+            <h2>Top-Notch Services</h2>
+            <div className="intro-line"></div>
+          </div>
+        </div>
+        <div className="row row-cols-1 row-cols-md-3 g-4 m-0">
+          <div className="col">
+            <ServiceCard
+              image="/design.svg"
+              imagealt="Beautifully Designed"
+              title="Beautifully Designed"
+              description="Our team of expert designers creates stunning and visually appealing websites that capture your brand's essence and leave a lasting impression on your audience."
+            ></ServiceCard>
+          </div>
+          <div className="col">
+            <ServiceCard
+              image="/responsive.svg"
+              imagealt="100% Responsive"
+              title="100% Responsive"
+              description="Our websites are fully responsive and optimized for all devices, ensuring that your website looks and functions flawlessly on desktops, laptops, tablets, and mobile phones."
+            ></ServiceCard>
+          </div>
+          <div className="col">
+            <ServiceCard
+              image="/animations.svg"
+              imagealt="Smooth Animations"
+              title="Smooth Animations"
+              description="We use smooth animations to enhance the user experience and engage your audience, creating an immersive and captivating website."
+            ></ServiceCard>
+          </div>
+          <div className="col">
+            <ServiceCard
+              image="/cms.svg"
+              imagealt="CMS Content"
+              title="CMS Content"
+              description="Our websites are built with a powerful CMS (Content Management System) that allows you to easily update and manage your website's content, ensuring that your website is always up-to-date and relevant."
+            ></ServiceCard>
+          </div>
+          <div className="col">
+            <ServiceCard
+              image="/pack.svg"
+              imagealt="Templates Set"
+              title="Templates Set"
+              description="We offer a wide range of customizable templates that can be tailored to your specific needs and preferences, providing you with a unique and personalized website that stands out from the crowd."
+            ></ServiceCard>
+          </div>
+          <div className="col">
+            <ServiceCard
+              image="/support.svg"
+              imagealt="Friendly Support"
+              title="Friendly Support"
+              description="Our friendly and knowledgeable support team is always ready to assist you with any questions or concerns you may have, providing you with the peace of mind and confidence you need to succeed online."
+            ></ServiceCard>
+          </div>
+        </div>
+      </div>
+      <div className="py-5"></div>
+      <div className="py-5"></div>
+      <div className="py-5"></div>
     </>
   );
 }
