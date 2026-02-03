@@ -70,96 +70,108 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="py-5"></div>
-      <div className="container">
-        <div className="d-flex justify-content-center align-items-center">
-          <div className="intro">
-            <span className="title">What You Get</span>
-            <h2>Top-Notch Services</h2>
-            <div className="intro-line"></div>
+      <div className="yc-section mt-5">
+        <div className="container">
+          <div className="d-flex flex-column align-items-center mb-5">
+            <span className="yc-subtitle text-uppercase fw-bold">What You Get</span>
+            <h2 className="yc-title">Top-Notch Services</h2>
           </div>
-        </div>
-        <div className="row row-cols-1 row-cols-md-3 g-4 m-0">
-          <div className="col">
-            <ServiceCard
-              image="/design.svg"
-              imagealt="Beautifully Designed"
-              title="Beautifully Designed"
-              description="Stunning designs that captivate your audience."
-            ></ServiceCard>
+
+          <div className="row align-items-center">
+            {/* Left Column: 3 Services */}
+            <div className="col-md-4">
+              <ServiceCard
+                image="/design.svg"
+                imagealt="Beautifully Designed"
+                title="Beautifully Designed"
+                description="Stunning designs that captivate your audience."
+              />
+              <ServiceCard
+                image="/responsive.svg"
+                imagealt="100% Responsive"
+                title="100% Responsive"
+                description="Optimized for all devices, ensuring seamless browsing."
+              />
+              <ServiceCard
+                image="/animations.svg"
+                imagealt="Smooth Animations"
+                title="Smooth Animations"
+                description="Engaging animations for an immersive experience."
+              />
+            </div>
+
+            {/* Middle Column: Vertical list of all 6 titles */}
+            <div className="col-md-4 yc-list-container d-none d-md-flex">
+              <ul className="p-0 m-0 w-100">
+                <li className="yc-list-item">Beautifully Designed</li>
+                <li className="yc-list-item">100% Responsive</li>
+                <li className="yc-list-item">Smooth Animations</li>
+                <li className="yc-list-item">CMS Content</li>
+                <li className="yc-list-item">Templates Set</li>
+                <li className="yc-list-item">Friendly Support</li>
+              </ul>
+            </div>
+
+            {/* Right Column: Other 3 Services */}
+            <div className="col-md-4">
+              <ServiceCard
+                className="text-md-end"
+                image="/cms.svg"
+                imagealt="CMS Content"
+                title="CMS Content"
+                description="Easy-to-update always up-to-date content management system."
+              />
+              <ServiceCard
+                className="text-md-end"
+                image="/pack.svg"
+                imagealt="Templates Set"
+                title="Templates Set"
+                description="Wide range of customizable templates to choose from."
+              />
+              <ServiceCard
+                className="text-md-end"
+                image="/support.svg"
+                imagealt="Friendly Support"
+                title="Friendly Support"
+                description="Expert and responsive support team at your service."
+              />
+            </div>
           </div>
-          <div className="col">
-            <ServiceCard
-              image="/responsive.svg"
-              imagealt="100% Responsive"
-              title="100% Responsive"
-              description="Optimized for all devices, ensuring seamless browsing."
-            ></ServiceCard>
-          </div>
-          <div className="col">
-            <ServiceCard
-              image="/animations.svg"
-              imagealt="Smooth Animations"
-              title="Smooth Animations"
-              description="Engaging animations for an immersive experience."
-            ></ServiceCard>
-          </div>
-          <div className="col">
-            <ServiceCard
-              image="/cms.svg"
-              imagealt="CMS Content"
-              title="CMS Content"
-              description="Easy-to-update always up-to-date content management system."
-            ></ServiceCard>
-          </div>
-          <div className="col">
-            <ServiceCard
-              image="/pack.svg"
-              imagealt="Templates Set"
-              title="Templates Set"
-              description="Wide range of customizable templates to choose from."
-            ></ServiceCard>
-          </div>
-          <div className="col">
-            <ServiceCard
-              image="/support.svg"
-              imagealt="Friendly Support"
-              title="Friendly Support"
-              description="Expert and responsive support team at your service."
-            ></ServiceCard>
+
+          {/* Two Large Images */}
+          <div className="row mt-5">
+            <div className="col-md-6 mb-4 mb-md-0">
+              <img src="/kipling.jpg" alt="Portfolio 1" className="yc-rounded-img" />
+            </div>
+            <div className="col-md-6">
+              <img src="/oakpark.jpg" alt="Portfolio 2" className="yc-rounded-img" />
+            </div>
           </div>
         </div>
       </div>
       <div className="py-5"></div>
-      <div className="py-3 pb-5">
+      <div className="yc-section pt-0">
         <div className="container">
-          <div className="d-flex justify-content-start align-items-center">
-            <div>
-              <h2 className="fw-bold container">Discover Our Creativity</h2>
-            </div>
+          <div className="d-flex flex-column align-items-center mb-5">
+            <span className="yc-subtitle text-uppercase fw-bold">Our Work</span>
+            <h2 className="yc-title">Discover Our Creativity</h2>
           </div>
-          <div className="row row-cols-1 row-cols-md-3 g-4 m-0">
-            <div className="col">
-              <PortfolioCard
-                image="/kipling.jpg"
-                imagealt="kipling station condos"
-                title="Kipling Station Condos - Rego Realty"
-              ></PortfolioCard>
-            </div>
-            <div className="col">
-              <PortfolioCard
-                image="/oakpark.jpg"
-                imagealt="oakpark village"
-                title="The Village of Oak Park - Rego Realty"
-              ></PortfolioCard>
-            </div>
-            <div className="col">
-              <PortfolioCard
-                image="/knight.jpg"
-                imagealt="Knightsbridge Condos"
-                title="Knightsbridge Condos - Rego Realty"
-              ></PortfolioCard>
-            </div>
+          <div className="yc-portfolio-grid">
+            <PortfolioCard
+              image="/kipling.jpg"
+              imagealt="kipling station condos"
+              title="Kipling Station Condos - Rego Realty"
+            ></PortfolioCard>
+            <PortfolioCard
+              image="/oakpark.jpg"
+              imagealt="oakpark village"
+              title="The Village of Oak Park - Rego Realty"
+            ></PortfolioCard>
+            <PortfolioCard
+              image="/knight.jpg"
+              imagealt="Knightsbridge Condos"
+              title="Knightsbridge Condos - Rego Realty"
+            ></PortfolioCard>
           </div>
         </div>
       </div>
