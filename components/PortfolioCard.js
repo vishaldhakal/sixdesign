@@ -1,13 +1,13 @@
 export default function PortfolioCard(props) {
   return (
     <>
-      <div className="portfolio-card shadow-lg rounded-1">
+      <div className="yc-portfolio-card">
         <img
           src={props.image}
           alt={props.imagealt}
-          className="img-fluid portfolio-card-img"
+          className="yc-portfolio-img"
         />
-        <p className="portfolio-card-title mt-2 fw-medium mb-0">
+        <p className="yc-portfolio-title">
           {props.title}
         </p>
       </div>
